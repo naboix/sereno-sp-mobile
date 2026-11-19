@@ -17,7 +17,7 @@
 | **Problema, em uma frase** | Em dias de calor extremo, idosos e trabalhadores de rua de Santana não sabem com antecedência quando o risco aumenta nem onde encontrar sombra e água por perto. |
 | **Como funciona** | Um totem com sensor mede temperatura e umidade na praça, calcula o índice de calor e acende luz verde, amarela ou vermelha. A leitura vai para um servidor, que também recebe a previsão de um modelo de Machine Learning treinado com dados reais do INMET. Pelo app, o cidadão vê o nível de calor agora, o aviso de véspera e os pontos de refresco mais próximos, mesmo sem internet. |
 | **O que cada parte faz** | **Totem ESP32** (Physical Computing): mede, alerta no local e envia a leitura · **API C#/.NET** (SOA e C#): recebe leituras e previsões, gera alertas e guarda no banco · **Modelo de ML**: prevê se amanhã será dia de calor extremo (INMET A701) · **App Expo (esta entrega)**: mostra nível, previsão e pontos de refresco; guarda check-ins e favoritos no celular · **Sereno Guard** (Cybersecurity): detecta e bloqueia vazamento de dados pessoais · **Servidor Linux** (OS) · **Azure Boards** (Testing) |
-| **Link do repositório** | _preencher com o link do GitHub desta pasta_ |
+| **Link do repositório** | https://github.com/naboix/sereno-sp-mobile |
 | **Indicador de impacto** | Percentual de dias de calor extremo avisados na véspera (recall do modelo de ML; meta ≥ 80%). No app: percentual de alertas seguidos de ação protetiva registrada (check-in "Bebi água" ou consulta a ponto de refresco em até 2 h) — linha de base a medir em piloto. |
 | **ODS conectados** | ODS 3 (Saúde e bem-estar) · ODS 10 (Redução das desigualdades) · ODS 11 (Cidades sustentáveis) · ODS 13 (Ação contra a mudança do clima) |
 

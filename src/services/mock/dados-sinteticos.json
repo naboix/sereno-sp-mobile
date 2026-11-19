@@ -1,0 +1,83 @@
+{
+  "_aviso": "DADOS SINTÉTICOS DE DEMONSTRAÇÃO. Nomes, endereços e coordenadas são fictícios e não representam estabelecimentos reais. Usados apenas pelo modo mock do app e pelo servidor de contrato simulado (mock-server/).",
+  "totens": [
+    {
+      "id": "6f1d2a40-0000-4000-8000-000000000001",
+      "codigo": "STN-01",
+      "ativo": true,
+      "pontoRefrescoId": "a1000000-0000-4000-8000-000000000001"
+    },
+    {
+      "id": "6f1d2a40-0000-4000-8000-000000000002",
+      "codigo": "STN-02",
+      "ativo": true,
+      "pontoRefrescoId": null
+    }
+  ],
+  "pontos": [
+    {
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "nome": "Ponto Demo A - Praça com sombra (fictício)",
+      "endereco": "Endereço fictício de demonstração, 100 - Santana",
+      "latitude": -23.5008,
+      "longitude": -46.6262,
+      "temAgua": true,
+      "temSombra": true
+    },
+    {
+      "id": "a1000000-0000-4000-8000-000000000002",
+      "nome": "Ponto Demo B - Bebedouro público (fictício)",
+      "endereco": "Endereço fictício de demonstração, 200 - Santana",
+      "latitude": -23.5041,
+      "longitude": -46.6219,
+      "temAgua": true,
+      "temSombra": false
+    },
+    {
+      "id": "a1000000-0000-4000-8000-000000000003",
+      "nome": "Ponto Demo C - Área coberta (fictício)",
+      "endereco": "Endereço fictício de demonstração, 300 - Santana",
+      "latitude": -23.4979,
+      "longitude": -46.6301,
+      "temAgua": false,
+      "temSombra": true
+    },
+    {
+      "id": "a1000000-0000-4000-8000-000000000004",
+      "nome": "Ponto Demo D - Espaço climatizado (fictício)",
+      "endereco": "Endereço fictício de demonstração, 400 - Santana",
+      "latitude": -23.5093,
+      "longitude": -46.6188,
+      "temAgua": true,
+      "temSombra": true
+    },
+    {
+      "id": "a1000000-0000-4000-8000-000000000005",
+      "nome": "Ponto Demo E - Parque arborizado (fictício)",
+      "endereco": "Endereço fictício de demonstração, 500 - Santana",
+      "latitude": -23.4936,
+      "longitude": -46.6232,
+      "temAgua": false,
+      "temSombra": true
+    }
+  ],
+  "cenarios": {
+    "perigo": {
+      "temperatura": 37.0,
+      "umidade": 60.0
+    },
+    "atencao": {
+      "temperatura": 32.0,
+      "umidade": 55.0
+    },
+    "normal": {
+      "temperatura": 24.0,
+      "umidade": 60.0
+    }
+  },
+  "previsao": {
+    "probabilidade": 0.82,
+    "versaoModelo": "demo-sintetico-v0"
+  },
+  "mensagemAlertaPerigo": "Calor perigoso detectado! Procure sombra, reduza a exposicao ao sol e mantenha-se hidratado."
+}

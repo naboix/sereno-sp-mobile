@@ -1,0 +1,25 @@
+--- a/Sereno.Api/Program.cs	2026-11-18 19:53:20.154443693 +0000
++++ b/Sereno.Api/Program.cs	2026-11-18 19:53:20.182533060 +0000
+@@ -66,6 +66,13 @@
+ // Serviços de autorização
+ builder.Services.AddAuthorization();
+ 
++// CORS (opcional): libera apenas as origens configuradas em Cors:Origens,
++// somente para GET. Necessário só para a versão web do app Sereno SP.
++var origensCors = builder.Configuration
++    .GetSection("Cors:Origens").Get<string[]>() ?? [];
++builder.Services.AddCors(o => o.AddPolicy("AppSereno", p =>
++    p.WithOrigins(origensCors).WithMethods("GET").AllowAnyHeader()));
++
+ // ==================================================
+ // 4. CONSTRUÇÃO DA APLICAÇÃO
+ // ==================================================
+@@ -101,6 +108,8 @@
+ 
+ app.UseHttpsRedirection();
+ 
++app.UseCors("AppSereno");
++
+ app.UseAuthorization();
+ 
+ app.MapControllers();

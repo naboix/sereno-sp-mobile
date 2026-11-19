@@ -1,0 +1,5 @@
+
+> sereno-sp-mobile@1.0.0 typecheck
+> tsc --noEmit && tsc --noEmit -p __tests__
+
+exit=0

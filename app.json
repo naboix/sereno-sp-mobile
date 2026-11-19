@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Sereno SP",
+    "slug": "sereno-sp",
+    "scheme": "serenosp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "O Sereno SP usa sua localização aproximada apenas para mostrar pontos de sombra e água perto de você. A localização não é salva."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF7ED",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": ["ACCESS_COARSE_LOCATION"],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "O Sereno SP usa sua localização aproximada apenas para mostrar pontos de sombra e água perto de você. A localização não é salva."
+        }
+      ]
+    ]
+  }
+}

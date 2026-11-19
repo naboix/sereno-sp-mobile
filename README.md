@@ -29,7 +29,7 @@
 | Jorge Luiz | RM554418 |
 | Arthur Bobadilla | RM555056 |
 
-**Vídeo (até 3 min):** _preencher com o link do YouTube_ — roteiro em [`docs/ROTEIRO_VIDEO.md`](docs/ROTEIRO_VIDEO.md).
+**Vídeo (até 3 min):** https://youtu.be/jwhmVcqD24g — roteiro em [`docs/ROTEIRO_VIDEO.md`](docs/ROTEIRO_VIDEO.md).
 
 ---
 

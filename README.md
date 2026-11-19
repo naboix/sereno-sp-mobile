@@ -215,4 +215,3 @@ __tests__/      testes Jest                docs/           integração, acessib
 - Os pontos do seed são **fictícios**, criados para a demonstração.
 - Sem localização, a distância é calculada a partir de um ponto de referência aproximado da região de Santana.
 
-Uso de IA: ver [`prompts.md`](prompts.md).
